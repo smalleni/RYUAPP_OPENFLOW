@@ -1,0 +1,29 @@
+README
+-------
+
+This zip file contains the codes for various modules of our project. 
+App1: Code to install flows statically to setup a path from source to destination.
+App2: Code to perform reactive restoration.
+App3: Code to perform proactive restoration.
+
+Files we used to simulate path failure detection mechanism:
+
+NetLink Kernel Module code which is inserted in the node to communicate with user space.
+NetLink User Module code which runs a timer that would be reset everytime the NetLink Kernel module sends a message.
+Netfilter Kernel Module code which filters packets destined for a port and communicates to the user space via the netlink kernel module. 
+
+
+File Name for App1: initial.py
+File Name for App2: react.py
+File Name for App3: grmod.py
+File Name for NetLink Kernel Module: kmod1.c
+File Name for NetLink User Moduel: usetest.c
+File Name for Netfilter Kernel Module: firenew.c
+
+Also, added are the makefiles and other files that were built using "make" command for the two kernel modules. 
+
+The make files for kmod1.c and firenew.c are generated in the linux kernel 3.13.0-24-generic. 
+The file usetest.c is run in the same kernel version. 
+The python files are run with python 2.7 interpreter installed in ubuntu 14.04 with linux version 3.13.0-24-generic.
+
+IP Project Team 17

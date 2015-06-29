@@ -1,0 +1,11 @@
+A.py is the python script used for running the interface monitoring script on Switch A.
+D.py is the python script used for running the interface monitoring script on Switch D.
+
+A-bfd.c is a C program used to detect the liveness and also to re-trigger the clock timer in Switch A.
+D_bfd.c is a C program used to detect the liveness and also to re-trigger the clock timer in Switch D.
+
+newgroup.py is the ryu controller app for protection mechanism.
+
+These are additional codes instead of the ones submitted earlier.
+
+Project Team 17.
